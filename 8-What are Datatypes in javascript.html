@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What are Datatypes in javascript</h1>
+
+    <h2>Primitive Data Types</h2>
+    <script>
+        // string
+        let str = "Hello world";
+        console.log(str);
+    </script>
+
+    <script>
+        // number
+        const x = 20;
+        console.log(x);
+    </script>
+
+    <script>
+        // boolean
+        const isTrue = true;
+        console.log(isTrue);
+    </script>
+
+    <script>
+        // undefined
+        let z;
+        console.log(z);
+    </script>
+
+    <script>
+        // null
+        let a = null;
+        console.log(a);
+    </script>
+
+    <h1>Non-primitive Data Types</h1>
+    <script>
+        // object
+        const person = {
+            fname: 'gopal',
+            lname: 'johari',
+            age: 29,
+            email: 'gopaljohari007@gmail.com'
+        }
+        console.log(person.email);
+    </script>
+    <script>
+        // function
+        function example(a, b) {
+
+            document.write(a + b)
+            return a;
+
+        }
+        example(5, 10)
+    </script>
+    <script>
+        // array
+        const arr = [1, 2, 3, 'gopal', 5];
+        console.log(arr);
+    </script>
+    <script>
+        // Creating a new Date object
+        let currentDate = new Date();
+        let year = currentDate.getFullYear();
+        let month = currentDate.getMonth();
+        let day = currentDate.getDate();
+        let hours = currentDate.getHours();
+        let minutes = currentDate.getMinutes();
+        let seconds = currentDate.getSeconds();
+
+        // Displaying the current date and time
+        console.log("Current date and time:", currentDate);
+        console.log("Year", year);
+        console.log("Month", month + 1);
+        console.log("Day", day);
+        console.log("Hours", hours);
+        console.log("Minutes", minutes);
+        console.log("Seconds", seconds);
+
+
+    </script>
+
+</body>
+
+</html>

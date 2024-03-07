@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What is the difference between getElementById, getElementsByClassName, and getElementsByTagName </h1>
+
+    <h2>getElementById</h2>
+    <div id="myDiv" class="myClass">1</div>
+    <div class="myClass">2</div>
+    <p class="myClass">3</p>
+    <!-- <script>
+        const element = document.getElementById("myDiv").innerHTML = "<h1>Hello world<h1>";
+
+        console.log(element)
+    </script> -->
+
+    <!-- <script>
+        const elements = document.getElementsByClassName("myClass");
+
+        for (let i = 0; i < elements.length; i++) {
+            console.log(elements[i].textContent);
+        }
+    </script> -->
+
+    <script>
+        const elementTag = document.getElementsByTagName("div");
+
+        for (let i = 0; i < elementTag.length; i++) {
+            console.log(elementTag[i].textContent);
+        }
+    </script>
+</body>
+
+</html>

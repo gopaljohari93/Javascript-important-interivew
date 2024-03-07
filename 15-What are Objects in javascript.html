@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What are Objects in javascript </h1>
+    <!-- <script>
+        const person = {
+            firstname: 'gopal',
+            lastname: 'johari',
+            age: 29,
+            isStudent: false,
+            address: {
+                city: 'New Yark',
+                country: 'USA'
+            },
+            sayHello: function () {
+                console.log('Hello');
+            }
+        }
+
+        // Accessing properties
+        console.log(person.address.country);
+
+        // Calling a method
+        person.sayHello();
+
+    </script> -->
+
+    <script>
+        const person1 = {
+            firstName: "Gopal",
+            lastName: "Johari",
+            age: 29,
+            address: {
+                city: 'Bangalore',
+                pinCode: 530068,
+                state: 'Karnataka',
+                moreDeatails: {
+                    population: 13193000,
+                    area: '741 km2 (286 sq mi)'
+                }
+            }
+        }
+        console.log(person1.address.moreDeatails.population);
+    </script>
+</body>
+
+</html>

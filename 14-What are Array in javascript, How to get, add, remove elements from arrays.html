@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What are Array in javascript, How to get, add & remove elements from arrays</h1>
+
+    <p>Array is a data type that allows you to store multiple values in a single variables</p>
+
+    <h2>Array method in javascript</h2>
+    <div style="display: flex; justify-content: space-around;">
+        <p>Get <br>
+            indexOf() <br>
+            find() <br>
+            filter() <br>
+            Slice()
+        </p>
+        <p>Add <br>
+            push() <br>
+            concat()
+        </p>
+        <p>Remove <br>
+            pop() <br>
+            shift() <br>
+            slice()
+        </p>
+        <p>Modify <br>
+            map() <br>
+            forEach()
+        </p>
+        <p>Others <br>
+            join() <br>
+            length <br>
+            sort() <br>
+            reverse() <br>
+            reduce() <br>
+            some() <br>
+            every()
+        </p>
+
+    </div>
+
+    <div>
+        <h2>important method in Array</h2>
+        push() <br>
+        unshift() <br>
+        pop() <br>
+        shift() <br>
+        filter() <br>
+        map() <br>
+        concat()
+    </div>
+
+
+
+    <script>
+        // Creating an array
+        const fruits = ['Apple', 'Banana', "Orange", "Mango", 395];
+
+        // Accessing elements in the array
+        console.log(fruits);
+        // console.log(fruits[0])  // Outputs: Apple
+        // console.log(fruits[2]); // Outputs: Orange
+
+        // Modifying elements in the array
+        // fruits[2] = "Tomato"
+        // console.log(fruits); // Outputs: ['Apple', 'Banana', 'Tomato', 'Mango', 395, null]
+
+        // Push method Adding elements to the end of the array
+        // fruits.push('PineApple');
+        // console.log(fruits); // Outputs: ['Apple', 'Banana', 'Orange', 'Mango', 395, null, 'PineApple']
+
+        // Pop method Removing the last element from the array
+        // let lastFruits = fruits.pop();
+        // console.log(lastFruits); // Outputs: PineApple
+
+        // unshift Adding an element to the start of the array
+        // fruits.unshift("c");
+        // console.log(fruits);
+
+        // fruits.unshift("Gopal");
+        // console.log(fruits); // Outputs: ['Gopal', 'Apple', 'Banana', 'Orange', 'Mango', 395, null]
+
+        // Removing the first element from the array
+        // let firstFruits = fruits.shift();
+        // console.log(firstFruits); // Outputs: Apple
+
+        // indexOf method Finding the index of an element in the array
+        // let bananaIndex = fruits.indexOf("Orange");
+        // console.log(bananaIndex); // Outputs: 2
+
+        // splice Removing an element by index position
+        // let removerFruits = fruits.splice("bananaIndex", 1);
+        // console.log(removerFruits); // Outputs: ['Apple']
+        // console.log(fruits);
+
+        // slice Copying an array
+        // let fruitsCopy = fruits.slice();
+        // console.log(fruitsCopy); // Outputs: ['Apple', 'Banana', 'Orange', 'Mango', 395, null]
+
+        // Iterating over an array
+        // fruits.forEach(function (item, index) {
+        //     console.log(index, item);
+        // });
+
+        // Filtering an array
+        // let longNameFruits = fruits.filter(function (item) {
+        //     return item.length > 5;
+        // })
+        // console.log(longNameFruits);
+
+        // lenght
+        // let number = [1,2,3,4,5];
+        // console.log(number.length);
+
+        // The concat() method merge two or more arrays
+        let arr1 = [1,2,3];
+        let arr2 = ['a', 'b', 'c'];
+        let arr3 = ['x', 'y', 'z'];
+
+        // Concatenating arrays
+        let demo = fruits.concat(arr1, arr3);
+        console.log(demo);
+
+
+    </script>
+
+
+</body>
+
+</html>

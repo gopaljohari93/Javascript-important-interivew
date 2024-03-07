@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What is the type coercion in javascript</h1>
+
+    <script>
+        let string = "42";
+        let number = 42;
+        let boolean = true;
+        let nullValue = null;
+
+        // Type coercion 
+        console.log(string + number);  // Output: 4242
+        console.log(number + boolean); // Output: 43
+        console.log(number == string); // Output: true
+        console.log(boolean == 1);     // Output: true
+        console.log(boolean + nullValue); // Output: 1
+
+    </script>
+</body>
+
+</html>

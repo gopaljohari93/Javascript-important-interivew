@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            color: blue;
+            font-weight: bold;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>What are Selector in javascript, dom selector method </h1>
+    <p>
+        getElementById <br>
+        getElementsByClassName <br>
+        getElementsByTagName <br>
+        querySelector <br>
+        querySelectorAll
+    </p>
+
+    <!-- <h1 id="heading">getElementById </h1>
+    <button onclick="changeText()">Click</button>
+
+    <script>
+        function changeText(){
+            const demo = document.getElementById("heading");
+            demo.textContent = "hello world";
+        }
+    </script> -->
+
+    <!-- <h1 class="myClass"> 1 getElementsByClassName </h1>
+    <div class="myClass">2</div>
+    <p class="myClass">3</p>
+
+    <script>
+        const element = document.getElementsByClassName("myClass");
+
+        for (let i = 0; i < element.length; i++) {
+            console.log(element[i].textContent);
+        }
+    </script> -->
+
+    <!-- <h1 class="myClass"> 1 getElementsByTagName </h1>
+    <div class="myClass">2</div>
+    <div class="myClass">3</div>
+
+    <script>
+        const elementTag = document.getElementsByTagName("div");
+
+        for (let i = 0; i < elementTag.length; i++) {
+            console.log(elementTag[i].textContent);
+        }
+    </script> -->
+
+
+    <!-- <h1 id="myDiv" class="myClass"> 1 querySelector </h1>
+    <div class="myClass">2</div>
+    <div class="myClass">3</div>
+
+    <script>
+        const button = document.querySelector(".myClass").style.backgroundColor = "red"
+    </script> -->
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <button onclick="demo()">Click</button>
+
+    <script>
+        function demo() {
+            // Selecting all <li> elements
+            const items = document.querySelectorAll("li");
+
+            // Looping through each <li> element and adding the "highlighted" class
+                items.forEach(function(item){
+                    item.classList.add("demo")
+                })
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

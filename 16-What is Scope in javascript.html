@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Global Scope vs Local Scope in Javascript</h1>
+    <h2>Types of scope  </h2>
+   
+    <!-- <script>
+        // Global scope
+        // var c = 300;
+        let a = 300;
+
+        // block scope
+        if (true) {
+            let a = 10;
+            const b = 20;
+            console.log("Inner: ", a);
+        }
+
+        console.log(a);
+        // console.log(b);
+        // console.log(c);
+    </script> -->
+
+    <!-- <script>
+        // global scope
+        function one() {
+            const username = 'gopal';
+
+            // block scope
+            function two() {
+                const website = 'youtube';
+                console.log(username);
+            }
+            // console.log(website);
+
+            // two()
+        }
+
+        one()
+
+    </script> -->
+
+    <!-- <script>
+        if (true) {
+            const username = 'gopal';
+            if (username === 'gopal') {
+                const website = ' youtube'
+                // console.log(username + website);
+            }
+            // console.log(website);
+        }
+        // console.log(username);
+    </script> -->
+
+    <!-- Global Scope -->
+    <!-- <script>
+        // Global Scope 
+        var gloabalVariable = 'I am global';
+
+        // block Scope
+        function foo() {
+            console.log(gloabalVariable); // Accessible
+        }
+        foo();
+
+    </script> -->
+
+    <!-- Local Scope -->
+    <!-- <script>
+        function foo() {
+            var localVariable = 'I am local';
+            console.log(localVariable); // Accessible
+        }
+        console.log(localVariable); // Not accessible - ReferenceError: localVariable is not defined
+
+        foo();
+    </script> -->
+
+    <!-- block scoped -->
+    <!-- <script>
+        function foo() {
+            if (true) {
+                let blockScopedVariable = 'I am block-scoped';
+                console.log(blockScopedVariable); // Accessible
+            }
+            console.log(blockScopedVariable); // Not accessible - ReferenceError: blockScopedVariable is not defined
+        }
+        foo();
+    </script> -->
+
+    <h1> Global Scope</h1>
+    <!-- <script>
+        var global = 'I am global';
+
+        function foo() {
+            console.log(global);
+        }
+        console.log(global);
+        foo();
+        console.log(global);
+    </script> -->
+
+    <h1>Local Scope</h1>
+    <!-- <script>
+
+        function foo() {
+
+            var local = 'i am local';
+            console.log(local);
+        }
+        console.log(local);
+
+        foo();
+    </script> -->
+
+    <h1>Block Scope</h1>
+    <script>
+        function foo(){
+
+            if(true){
+                let block = 'local';
+                console.log(block);
+            }
+            console.log(block);
+        }
+        foo()
+    </script>
+</body>
+
+</html>
